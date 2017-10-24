@@ -100,7 +100,7 @@
 			}
 			
 			// Get the most recent 10 entries.
-			$result = mysqli_query($conn, "SELECT id, date, s1, s2 FROM data ORDER BY id DESC LIMIT " . $display . "");
+			$result = mysqli_query($conn, "SELECT date, s1, s2 FROM YOUR_TABLE_NAME ORDER BY date DESC LIMIT " . $display . "");
 			while($row = mysqli_fetch_assoc($result)) {
 				echo "<table><tr><th>Date</th><th>Sensor 1</th><th>Sensor 2</th><th>Status</th></tr>";
 				echo "<tr><td>";
